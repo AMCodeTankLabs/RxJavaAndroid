@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:gravity="center"
+    tools:context="com.codetanklabs.rxjavasample.view.RPSActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/player_one_image"
+            android:src="@drawable/ic_unknown"
+            android:padding="7dp"
+            android:layout_weight="1"
+            android:onClick="onPlayerOnClick"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <LinearLayout
+            android:background="@color/colorPrimaryDark"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"></LinearLayout>
+        <ImageView
+            android:id="@+id/player_two_image"
+            android:src="@drawable/ic_unknown"
+            android:padding="7dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        tools:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:layout_weight="1"
+            android:gravity="left"
+            tools:text="PLAYER 1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:layout_weight="1"
+            android:gravity="right"
+            tools:text="ANDROID" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/winnerPlayerViewGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <TextView
+            android:id="@+id/winnerPlayerLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:layout_margin="20dp"
+            tools:text="PLAYER 1" />
+
+    </LinearLayout>
+
+</LinearLayout>

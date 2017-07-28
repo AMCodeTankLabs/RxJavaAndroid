@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">RxJava Sample</string>
+    <string name="winner">Winner</string>
+    <string name="action_reset">Reset</string>
+
+    <string name="winner_tie">You TIED!</string>
+    <string name="winner_lost">You LOST!</string>
+    <string name="winner_winner">You WON!</string>
+</resources>
